@@ -11,17 +11,34 @@
     - 2025/11/17: Refactored to use hash_fn.h
 
    Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
+   
+
+   Development History:
+    - 2025/11/22: Initial commit: Add template files
+    - 2025/11/25: Implement myHashInt & myHashString in C
+
+   Developer: Yi-Kai Lo <s1133304@mail.yzu.edu.tw>
  */
 
 #include "hash_fn.h"
 
+int pow(int n, int i) {    //calculating powers
+    int res = 1;
+    for(int j = 0; j < i; ++j) {
+        res *= n;
+    }
+    return res;
+}
+
 int myHashInt(int key, int m) {
-    // TODO: replace with your own design
-    return key % m;  // division method example
+    return key % 97;    //deviding by a large enough prime number
 }
 
 int myHashString(const char* str, int m) {
     unsigned long hash = 0;
-    // TODO: replace with your own design
-    return (int)(hash % m); // basic division method
+    const int p = 10;
+    for (int i = 0; str[i] != '\0'; ++i) {  //hashing
+        hash += (int)str[i] * pow_int(p, i);
+    }
+    return (int)(hash % 97); //deviding by a prime number
 }
