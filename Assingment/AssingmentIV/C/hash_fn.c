@@ -22,7 +22,7 @@
 
 #include "hash_fn.h"
 
-int pow(int n, int i) {    //calculating powers
+int pow_c(const int n, int i) {    //calculating powers
     int res = 1;
     for(int j = 0; j < i; ++j) {
         res *= n;
@@ -38,7 +38,7 @@ int myHashString(const char* str, int m) {
     unsigned long hash = 0;
     const int p = 10;
     for (int i = 0; str[i] != '\0'; ++i) {  //hashing
-        hash += (int)str[i] * pow_int(p, i);
+        hash += (int)str[i] * pow_c(p, i);
     }
     return (int)(hash % 97); //deviding by a prime number
 }
