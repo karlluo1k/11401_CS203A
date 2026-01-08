@@ -30,8 +30,8 @@
 
     - solution:
         ~~array = (double *) realloc(array, n * sizeof(double));~~
+        <br>
         temp = (double *) realloc(array, n * sizeof(double));
-    <br>
     ### Note:
     ```
     避免realloc失敗時遺失原本的array指標，還可以加上輸出錯誤訊息，保證記憶體分配失敗時程式能繼續運行且我們能夠得知。
