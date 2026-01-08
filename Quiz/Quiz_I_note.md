@@ -29,8 +29,9 @@
     </ol>
 
     - solution:
+    <br>
         ~~array = (double *) realloc(array, n * sizeof(double));~~
-        <br>
+    <br>
         temp = (double *) realloc(array, n * sizeof(double));
     ### Note:
     ```
