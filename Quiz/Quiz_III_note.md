@@ -48,6 +48,7 @@ ___
     - Open addressing
     - Separate chaining
 <br>
+
     ### <font color = "green">Correct ans:</font>
     ```
     Open addressing stores all entries in table; chaining stores lists in buckets.
