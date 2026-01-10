@@ -1,4 +1,5 @@
-## About BFS:
+## Questions I wrote incorrectly
+### **About BFS:**
 ### The answer:
 - Breadth-First Search (BFS):
     1. Uses a queue. 
@@ -13,7 +14,7 @@
 而「需要紀錄節點是否被拜訪過，避免重複訪問」是我考試時所漏寫的。
 ```
 ___
-## About Shaped-based binary tree:
+### **About Shaped-based binary tree:**
 ### The answer:
 - Shaped-based binary tree
     1. Complete Binary Tree
