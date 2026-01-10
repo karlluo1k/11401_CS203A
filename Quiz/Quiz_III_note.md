@@ -47,7 +47,7 @@ ___
 - ### Q6. Briefly explain the difference between:
     - Open addressing
     - Separate chaining
-<br>
+    <br>
 
     ### <font color = "green">Correct ans:</font>
     ```
